@@ -25,7 +25,7 @@ btn.addEventListener('click', () => {
 
 function fetchWeatherData() {
   const key = '4a526b35ebe74cd98bd195720220302';
-  fetch(`http://api.weatherapi.com/v1/current.json?key=4a526b35ebe74cd98bd195720220302&q=auto:ip&aqi=no
+  fetch(`https://api.weatherapi.com/v1/current.json?key=4a526b35ebe74cd98bd195720220302&q=auto:ip&aqi=no
   `)
     .then((response) => response.json())
     .then((data) => {
