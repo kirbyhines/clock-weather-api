@@ -15,11 +15,11 @@ btn.addEventListener('click', () => {
   if (infoContainer.style.display == 'none') {
     infoContainer.style.display = 'flex';
     btn.innerHTML =
-      'LESS<img src="./assets/desktop/icon-arrow-down.svg" id="getImage" />';
+      'LESS<img src="assets/desktop/icon-arrow-down.svg" id="getImage" />';
   } else {
     infoContainer.style.display = 'none';
     btn.innerHTML =
-      'MORE<img src="./assets/desktop/icon-arrow-down.svg" id="getImage" />';
+      'MORE<img src="assets/desktop/icon-arrow-down.svg" id="getImage" />';
   }
 });
 
@@ -49,13 +49,13 @@ function fetchWeatherData() {
         now.innerHTML = t_str;
 
         if (data.current.is_day) {
-          helloContainer.innerHTML = `<img class="icon" src="./assets/desktop/icon-sun.svg" alt="" />
+          helloContainer.innerHTML = `<img class="icon" src="assets/desktop/icon-sun.svg" alt="" />
             <h2>GOOD MORNING</h2>`;
-          document.body.style.backgroundImage = `url(./assets/desktop/bg-image-daytime.jpg)`;
+          document.body.style.backgroundImage = `url(assets/desktop/bg-image-daytime.jpg)`;
         } else {
-          helloContainer.innerHTML = `<img class="icon" src="./assets/desktop/icon-moon.svg" alt="" />
+          helloContainer.innerHTML = `<img class="icon" src="assets/desktop/icon-moon.svg" alt="" />
             <h2>GOOD EVENING</h2>`;
-          document.body.style.backgroundImage = `url(./assets/desktop/bg-image-nighttime.jpg)`;
+          document.body.style.backgroundImage = `url(assets/desktop/bg-image-nighttime.jpg)`;
         }
       }
       setInterval(updateTime, 1000);
